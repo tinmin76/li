@@ -166,7 +166,7 @@ height:500px;
 
 <div class="main">
     <h1 style="color:black;font-size:50px;">Лучшие блюда</h1>
-  <ul class="cards"  >
+  <ul class="cards"  style="">
     <li class="cards_item" >
       <div class="card">
         <div class="card_image"><img src="https://assets.codepen.io/652/photo-1468777675496-5782faaea55b.jpeg" alt="mixed vegetable salad in a mason jar. "></div>
@@ -225,6 +225,8 @@ height:500px;
   margin: 0 auto;
 }
 
+
+
 .cards {
   display: grid;
   grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
@@ -233,9 +235,20 @@ height:500px;
   padding: 0;
 }
 
+                @media (max-width: 318px) {
+    .cards {
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    }
+}
+
+
+
+
+
 .cards_item {
   display: flex;
   padding: 1rem;
+
 }
 
 .card_image {
@@ -718,6 +731,12 @@ h1 {
 }
 
 
+@media only screen and (max-width: 280px){
+    h1 {
+       font-size: 40px;
+    }
+}
+
 
 
 h4 {
@@ -729,9 +748,9 @@ h4 {
 }
 
 
-@media only screen and (max-width: 392px){
+@media only screen and (max-width: 280px){
     h4 {
-
+font-size: 16px;
     }
 }
 
